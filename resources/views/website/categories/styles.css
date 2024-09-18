@@ -1,0 +1,42 @@
+/* General Styles */
+.category-card, .subcategory-card {
+    border-radius: 15px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transitions */
+    overflow: hidden; /* Ensure image stays within rounded corners */
+}
+
+.category-card:hover, .subcategory-card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Button Styles */
+.custom-btn {
+    background-color: #d9534f; /* Red button color */
+    color: white;
+    border-radius: 25px; /* Rounded button shape */
+    padding: 8px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover transitions */
+    border: none;
+}
+
+.custom-btn:hover {
+    background-color: #c9302c; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Subcategory card adjustments */
+.subcategory-card {
+    border-radius: 10px; /* Slightly smaller rounded corners */
+}
+
+.subcategory-card .card-body h6 {
+    font-size: 1rem; /* Slightly smaller title font size */
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
